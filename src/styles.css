@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  background-image: url('./assets/cold.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  transition: ease-in-out 0.4s;
+}
+.container-warm {
+  background-image: url('./assets/warm.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  transition: ease-in-out 0.4s;
+}
+
+.main {
+  min-height: 100vh;
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+
+  padding: 30px;
+}
+
+/* Search */
+
+.search-div {
+  width: 80%;
+  max-width: 450px;
+
+  margin: auto;
+}
+.search-div > input {
+  width: 100%;
+
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  padding: 10px;
+
+  color: rgba(0, 0, 0, 0.8);
+
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+
+  transition: 0.2s;
+}
+.search-div > input:focus {
+  background-color: rgba(255, 255, 255, 0.8)
+}
+
+/* Location */
+
+.location {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.location-city {
+  color: #FFF;
+
+  font-size: 34px;
+  font-weight: 600;
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.4);
+}
+
+.location-date {
+  margin-top: 8px;
+
+  color: #FFF;
+
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Weather */
+
+.weather {
+  margin: 60px auto;
+  text-align: center;
+}
+
+.weather-temp {
+  max-width: 500px;
+
+  margin: auto;
+
+  box-shadow: 3px 3px rgba(50, 50, 50, 0.4);
+
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 10px;
+
+  padding: 80px;
+
+  color: #FFF;
+  font-size: 90px;
+  font-weight: 600;
+}
+
+.weather-feels-like {
+  margin-top: 5px;
+
+  font-size: 20px;
+}
+
+.weather-wind {
+  margin-top: 10px;
+
+  font-size: 20px;
+}
+
+.weather-condition {
+  margin: 20px auto;
+
+  color: #FFF;
+
+  font-size: 36px;
+}
+
+@media screen and (max-width: 420px) {
+  .weather-temp {
+    font-size: 60px;
+
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .weather-temp {
+    font-size: 44px;
+  }
+}
